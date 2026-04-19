@@ -1,5 +1,5 @@
 import math
-import sys
+import sys  
 
     #homework1
 def f2(arr,n):
@@ -14,8 +14,22 @@ def f2(arr,n):
     return arr[1,n]
 
 
-if __name__ == "__main__":
-    # Everything after the script name is a command-line parameter.
-    params = sys.argv[1:]
-    print("Parameters:", params)
+def insertionRec(arr, n):
+    if n <= 0:
+        return
+    
+    insertionRec(arr, n - 1)
+    key = arr[n]
+    j = n - 1
+    while j >= 0 and arr[j] > key:
+        arr[j + 1] = arr[j]
+        j -= 1
+    arr[j + 1] = key
 
+if __name__ == "__main__":
+    arr = [3, 1, 4, 2, 5]
+    insertionRec(arr, len(arr) - 1)
+    print("Sorted array is: ")
+    for i in range(1,len(arr)):
+        print(arr[i], end=" ")
+    
