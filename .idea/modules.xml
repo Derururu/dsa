@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dsa.iml" filepath="$PROJECT_DIR$/.idea/dsa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rbtrees.iml" filepath="$PROJECT_DIR$/rbtrees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rbtree/rbtree.iml" filepath="$PROJECT_DIR$/rbtree/rbtree.iml" />
     </modules>
   </component>
 </project>
